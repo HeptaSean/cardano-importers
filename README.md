@@ -27,7 +27,8 @@ This repository contains some scripts to convert different kinds of
 keys/secrets to the `.skey` private key files used by
 [`cardano-cli`](https://github.com/IntersectMBO/cardano-cli).
 Apart from using `cardano-cli`, these key files can also be imported into
-the Cardano wallet app [Eternl](https://eternl.io/) as shown below.
+the Cardano wallet app [Eternl](https://eternl.io/) as shown
+[below](#importing-skey-files-to-eternl).
 
 For running these Python scripts, I recommend getting
 [`uv`](https://docs.astral.sh/uv/getting-started/installation/).
@@ -37,6 +38,7 @@ If you know your Python, you can choose any other preferred method of
 installing the dependencies and running the scripts, of course.
 
 ## Exodus seed phrases: `exodus2skey.py`
+TODO
 
 ## Atomic private keys: `atomicxprv2skey.py`
 [Atomic](https://atomicwallet.io/)'s seed phrases are compatible with Cardano
@@ -58,5 +60,15 @@ wallet app that I know at the moment.
 So, if a user has *only* saved this private key, but not their seed phrase,
 it is useful to be able to convert it into something that can be used by
 other tools.
+`uv run --script atomicxprv2skey.py` will ask for the `xprv1…` key (can also
+be given directly on the command line), print the address it has derived from
+it (as a possibility to check it reached the expected result), and save a
+`payment.skey` and a `stake.skey` file in the current directory:
+
+TODO
+
+With these files, this single-address account can also be
+[imported into Eternl](#importing-skey-files-to-eternl).
 
 ## Importing `.skey` files to Eternl
+TODO
