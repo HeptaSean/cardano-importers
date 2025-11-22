@@ -39,5 +39,24 @@ installing the dependencies and running the scripts, of course.
 ## Exodus seed phrases: `exodus2skey.py`
 
 ## Atomic private keys: `atomicxprv2skey.py`
+[Atomic](https://atomicwallet.io/)'s seed phrases are compatible with Cardano
+wallet apps.
+As a test wallet, we use the seed phrase `twelve twelve twelve twelve twelve
+twelve twelve twelve twelve twelve twelve twelve` (twelve times “twelve”).
+In Atomic as well as in Eternl (and other Cardano wallet apps), this leads to
+the wallet with the address
+`addr1q9w8atxfen0fqd99rnagywam68n7tvzg4g5t39azwtgm2uy0cwl6t7cd6sffn3l8ryyfn4ztw009gqtumhenxahughnspt8frx`.
+
+But additionally, Atomic also allows to copy and save an extended private key
+in Bech32 encoding with the human-readable prefix `xprv`:
+![Screenshot of the private key view in Atomic](images/Atomic.png)
+This extended private key –
+`xprv1sptszjf8aru7k9g3r5kgcdv0qdzdknz3psg662gptp9fyrrhg4ql9ukkxpmkjjegycy9kfyevqt80zancu6sp072f7szsat3kz6ck2lva6unyhxgv4kpr4l9see65z2hx8ku0x03ms5vlq07v63pkm0umsyamah4`
+– cannot be imported into Atomic itself again and also not into any Cardano
+wallet app that I know at the moment.
+
+So, if a user has *only* saved this private key, but not their seed phrase,
+it is useful to be able to convert it into something that can be used by
+other tools.
 
 ## Importing `.skey` files to Eternl
