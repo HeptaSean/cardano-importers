@@ -41,8 +41,8 @@ installing the dependencies and running the scripts, of course.
 TODO
 
 ## Atomic private keys: `atomicxprv2skey.py`
-[Atomic](https://atomicwallet.io/)'s seed phrases are compatible with Cardano
-wallet apps.
+[Atomic Wallet](https://atomicwallet.io/)'s seed phrases are compatible with
+Cardano wallet apps.
 As a test wallet, we use the seed phrase `twelve twelve twelve twelve twelve
 twelve twelve twelve twelve twelve twelve twelve` (twelve times “twelve”).
 In Atomic as well as in Eternl (and other Cardano wallet apps), this leads to
@@ -64,11 +64,17 @@ other tools.
 be given directly on the command line), print the address it has derived from
 it (as a possibility to check it reached the expected result), and save a
 `payment.skey` and a `stake.skey` file in the current directory:
-
-TODO
+![Screenshot of running atomicxprv2skey.py](images/atomicxprv2skey.png)
 
 With these files, this single-address account can also be
 [imported into Eternl](#importing-skey-files-to-eternl).
+
+In fact, the `xprv1…` given by Atomic Wallet is just the extended account
+private key and the script just decodes it and derives the first payment and
+the stake key from it.
+
+## BC Vault private keys: `bcvault2skey.py
+TODO`
 
 ## Importing `.skey` files to Eternl
 TODO
