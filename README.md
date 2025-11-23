@@ -51,7 +51,9 @@ the wallet with the address
 
 But additionally, Atomic also allows to copy and save an extended private key
 in Bech32 encoding with the human-readable prefix `xprv`:
-![Screenshot of the private key view in Atomic](images/Atomic.png)
+<img src="images/Atomic.png"
+     alt="Screenshot of the private key view in Atomic"
+     style="width:100%">
 This extended private key –
 `xprv1sptszjf8aru7k9g3r5kgcdv0qdzdknz3psg662gptp9fyrrhg4ql9ukkxpmkjjegycy9kfyevqt80zancu6sp072f7szsat3kz6ck2lva6unyhxgv4kpr4l9see65z2hx8ku0x03ms5vlq07v63pkm0umsyamah4`
 – cannot be imported into Atomic itself again and also not into any Cardano
@@ -64,7 +66,9 @@ other tools.
 be given directly on the command line), print the address it has derived from
 it (as a possibility to check it reached the expected result), and save a
 `payment.skey` and a `stake.skey` file in the current directory:
-![Screenshot of running atomicxprv2skey.py](images/atomicxprv2skey.png)
+<img src="images/atomicxprv2skey.png"
+     alt="Screenshot of running atomicxprv2skey.py"
+     style="width:100%">
 
 With these files, this single-address account can also be
 [imported into Eternl](#importing-skey-files-to-eternl).
@@ -83,11 +87,19 @@ Keys”.
 Select or drag and drop the two generated files.
 The shown address should already be the address of the wallet/account that
 you want to import.
-![Screenshot of first wallet type selection in Eternl](images/Eternl-01-Wallet-Type-1.png)![Screenshot of more wallet types in Eternl](images/Eternl-02-Wallet-Type-2.png)![Screenshot of importing CLI signing keys to Eternl](images/Eternl-03-CLI-Signing-Keys.png)
+<img src="images/Eternl-01-Wallet-Type-1.png"
+     alt="Screenshot of first wallet type selection in Eternl"
+     style="width:33%"><img src="images/Eternl-02-Wallet-Type-2.png"
+                            alt="Screenshot of more wallet types in Eternl"
+                            style="width:33%"><img src="images/Eternl-03-CLI-Signing-Keys.png"
+                                                   alt="Screenshot of importing CLI signing keys to Eternl"
+                                                   style="width:33%">
 
 After defining name and password for this new wallet, it is imported and can
 be used to send, receive, and even connect to dApps:
-![Screenshot of the imported wallet in Eternl](images/Eternl-04-Wallet-Imported.png)
+<img src="images/Eternl-04-Wallet-Imported.png"
+     alt="Screenshot of the imported wallet in Eternl"
+     style="width:100%">
 
 It is not *completely* the same as a usual wallet derived from a seed phrase,
 though.
