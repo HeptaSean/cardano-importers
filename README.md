@@ -50,7 +50,7 @@ the wallet with the address
 `addr1q9w8atxfen0fqd99rnagywam68n7tvzg4g5t39azwtgm2uy0cwl6t7cd6sffn3l8ryyfn4ztw009gqtumhenxahughnspt8frx`.
 
 But additionally, Atomic also allows to copy and save an extended private key
-in Bech32 encoding with the human-readable prefix `xprv`:
+in Bech32 encoding with the human-readable prefix `xprv`:<br>
 <img src="images/Atomic.png"
      alt="Screenshot of the private key view in Atomic"
      style="width:100%">
@@ -65,7 +65,7 @@ other tools.
 `uv run --script atomicxprv2skey.py` will ask for the `xprv1…` key (can also
 be given directly on the command line), print the address it has derived from
 it (as a possibility to check it reached the expected result), and save a
-`payment.skey` and a `stake.skey` file in the current directory:
+`payment.skey` and a `stake.skey` file in the current directory:<br>
 <img src="images/atomicxprv2skey.png"
      alt="Screenshot of running atomicxprv2skey.py"
      style="width:100%">
@@ -86,7 +86,7 @@ In the dialog for adding a new wallet, select “More” and then “CLI Signing
 Keys”.
 Select or drag and drop the two generated files.
 The shown address should already be the address of the wallet/account that
-you want to import.
+you want to import.<br>
 <img src="images/Eternl-01-Wallet-Type-1.png"
      alt="Screenshot of first wallet type selection in Eternl"
      style="width:33%"><img src="images/Eternl-02-Wallet-Type-2.png"
@@ -96,7 +96,7 @@ you want to import.
                                                    style="width:33%">
 
 After defining name and password for this new wallet, it is imported and can
-be used to send, receive, and even connect to dApps:
+be used to send, receive, and even connect to dApps:<br>
 <img src="images/Eternl-04-Wallet-Imported.png"
      alt="Screenshot of the imported wallet in Eternl"
      style="width:100%">
