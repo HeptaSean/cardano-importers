@@ -18,7 +18,7 @@ BECH32_CHARSET = "qpzry9x8gf2tvdw0s3jn54khce6mua7l"
 BECH32_GENERATOR = [0x3B6A57B2, 0x26508E6D, 0x1EA119FA, 0x3D4233DD, 0x2A1462B3]
 
 
-def bech32_decode(bech32: str) -> Tuple[str, bytes]:
+def bech32_decode(bech32: str) -> Tuple[str, bytearray]:
     """Decode Bech32 string into human-readable part and data."""
     # Check format, divide human-readable and data part
     # and decode characters to 5-bit integers:
